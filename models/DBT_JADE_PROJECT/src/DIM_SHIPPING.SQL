@@ -30,6 +30,3 @@ PO_ACK AS
   
   
   
-select distinct(SHIPMENT_NUMBER)
-from "DBT_DB"."DBT_SF_SCHEMA"."STG_ADV" where SHIPMENT_NUMBER IS NOT NULL
-where order_id is NOT null
