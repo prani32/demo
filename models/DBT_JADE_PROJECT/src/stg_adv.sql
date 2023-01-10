@@ -1,4 +1,5 @@
 with source_data AS
+(
 select * from {{ source('shipping_data', 'ADJ_ADV_947') }}
 )
 
