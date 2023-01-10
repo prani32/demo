@@ -6,3 +6,5 @@ select
         TRANSFER_ORGANIZATION_NAME
         from "DBT_DB"."DBT_SCHEMA"."ADJ_ADV_947"
 )
+
+select * from ADV
