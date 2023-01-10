@@ -2,10 +2,10 @@
     materialized="table"
 )}}
 
-with SHIIPING_DETAILS as (
-select * from {{ ref('STG_ACK') }}
+with ACK_DETAILS as (
+select * from {{ ref('STG_ACK')}}
 ),
-PO_ACK AS
+ADV_DETAILS AS
 (
  select * from {{ ref('STG_ADV') }}
 )
@@ -16,7 +16,8 @@ PO_ACK AS
          SN.SHIPPED_DATE,
          SN.EXPECTED_RECEIPT_DATE,
          ACK.ACKNOWLEDGEMENT_RESPONSE
-         from ADJ_ADV  AA
-         JOIN  ACK USING (SHIPMENT_NUMBER)
+         from ADV_DETAILS  AA
+         JOIN  ACK_DETAILS   ACK USING (SHIPMENT_NUMBER)
          left join DBT_DB.DBT_SCHEMA.SHIPPING_NOTICE_856 SN
   using (SHIPMENT_NUMBER)
+

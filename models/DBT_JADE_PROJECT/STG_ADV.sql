@@ -1,14 +1,15 @@
-{{ config (
-    materialized="table"
-)}}
-
-with ADJ_ADV as (
+WITH ADV as
+(
+select * from {{ source('shipping_data', 'ADJ_ADV_947') }}
+),
+stagged as
+(
 select
         SHIPMENT_NUMBER,
         ITEM,
         VENDOR_NAME,
         TRANSFER_ORGANIZATION_NAME
-        from "DBT_DB"."DBT_SCHEMA"."ADJ_ADV_947"
-)
+        from ADV
 
-select * from ADJ_ADV
+)
+select * from stagged
