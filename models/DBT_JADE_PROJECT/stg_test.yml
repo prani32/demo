@@ -3,7 +3,13 @@ version: 2
 models:
   - name: STG_ACK
     columns: 
-      - name: SUPPLIER_ORDER_NUMBER AS SHIPMENT_NUMBER
+      - name: SHIPMENT_NUMBER
+        tests:
+          - unique
+          - not_null
+  - name: STG_ADV
+    columns: 
+      - name: SHIPMENT_NUMBER
         tests:
           - unique
           - not_null
