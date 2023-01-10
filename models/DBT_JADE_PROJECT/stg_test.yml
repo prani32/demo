@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: STG_ACK
+    description: Purchased order data.
+    columns: 
+      - name: SUPPLIER_ORDER_NUMBER
+        tests:
+      
+  - name: STG_ADV
+    columns:
+      - name: VENDOR_NAME
+        description: Staged TRANSACTION data.
+        tests:
+      - name: status
+        description: "{{ doc('order_status') }}"
+        tests:
+          - accepted_values:
+              values:
+                - completed
+                - shipped
+                - returned
+                - placed
+                - return_pending
+      - name: customer_id
+        description: Foreign key to stg_customers.customer_id.
+        tests:
+          - relationships:
+              to: ref('stg_customers')
+              field: customer_id
