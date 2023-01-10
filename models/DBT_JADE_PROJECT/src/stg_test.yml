@@ -4,7 +4,7 @@ models:
   - name: stg_ack
     description: Staged shipping data.
     columns: 
-      - name:  SHIPMENT_NUMBER
+      - name: SHIPMENT_NUMBER
         tests:
           - unique
           - not_null
