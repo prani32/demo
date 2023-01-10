@@ -34,8 +34,6 @@ PO_ACK AS
          left join DBT_DB.DBT_SCHEMA.SHIPPING_NOTICE_856 SN
   using (SHIPMENT_NUMBER)
   
- 
-  
   
   
   
