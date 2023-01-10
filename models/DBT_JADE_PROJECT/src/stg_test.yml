@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: stg_ack
+    description: Staged shipping data.
+    columns: 
+      - name:  SHIPMENT_NUMBER
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_adv
+    description: Staged transaction data.
+    columns:
+      - name: SHIPMENT_NUMBER
+        tests:
+          - unique
+          - not_null
+      
+       

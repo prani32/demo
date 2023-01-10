@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: shipping_data
+    database: dbt_db
+    schema: dbt_schema
+    tables:
+      - name: PO_ACK_855
+      - name: ADJ_ADV_947
