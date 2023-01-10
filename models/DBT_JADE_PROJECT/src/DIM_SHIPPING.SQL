@@ -3,14 +3,11 @@ with ACK_DATA as (
     select * from {{ ref('stg_ack')}}
 
 ),
-
 ADV_DATA as (
 
     select * from {{ ref('stg_adv') }}
-
 ),
-
-with SHIIPING_DETAILS as (
+SHIIPING_DETAILS as (
 select
         SHIPMENT_NUMBER,
         ITEM,
