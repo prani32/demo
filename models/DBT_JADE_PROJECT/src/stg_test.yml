@@ -16,6 +16,7 @@ models:
         tests:
           - unique
           - not_null
-        - name: status
-        description: "{{ doc('trans_status') }}"
+      - name: status
+        description: "{{ doc('order_status') }}"
+        tests:
        
