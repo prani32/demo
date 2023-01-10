@@ -2,6 +2,7 @@ version: 2
 
 sources:
   - name: shipping_data
+    description: Shipping data.
     database: dbt_db
     schema: dbt_schema
     tables:
