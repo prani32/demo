@@ -1,3 +1,7 @@
+{{ config (
+    materialized="view"
+)}}
+
 with ACK_DATA as (
 
     select * from {{ ref('stg_ack')}}
