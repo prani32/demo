@@ -12,3 +12,5 @@ select * from {{ref('stg_receipt')}}
   where EXPECTED_RECEIPT_DATE >= (select max(EXPECTED_RECEIPT_DATE) from {{ this }})
 {% endif %}
 group by 1
+)
+select * from incr_data1
