@@ -1,1 +1,1 @@
-select max(SHIPPED_DATE) from {{ref('test_incrt')}}
+select max(SHIPPED_DATE) from {{ref('stg_receipt')}}
