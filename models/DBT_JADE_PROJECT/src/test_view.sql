@@ -2,4 +2,4 @@
     materialized="view"
 )}}
 
-select * from "DBT_DB"."DBT_SCHEMA"."SHIPPING_NOTICE_856"
+select * from SHIPPING_NOTICE_856
