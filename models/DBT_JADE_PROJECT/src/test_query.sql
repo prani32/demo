@@ -1,1 +1,1 @@
-select MAX(EXPECTED_RECEIPT_DATE) from {{ref('stg_receipt')}}
+select max(EXPECTED_RECEIPT_DATE) from {{ref('stg_receipt')}}
