@@ -7,3 +7,5 @@ sources:
     tables:
       - name: PO_ACK_855
       - name: ADJ_ADV_947
+      - name: RECEIPT_ADVICE_944
+     
