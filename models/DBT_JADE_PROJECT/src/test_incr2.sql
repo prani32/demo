@@ -1,7 +1,7 @@
 {{
     config(
         materialized='incremental',
-        unique_key='date_day'
+        unique_key='EXPECTED_RECEIPT_DATE'
     )
 }}
 with incr_data1 as
