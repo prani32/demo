@@ -2,8 +2,11 @@
 {{config(
       materialized='view',
       incremental_strategy='merge',
-      unique_key=''
+      unique_key='SHIPMENT_NUMBER',
+ 
+
 )}}
+
 with incr_data as
 (
 merge into target_table t
