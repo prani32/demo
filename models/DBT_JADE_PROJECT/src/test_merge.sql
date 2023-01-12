@@ -4,13 +4,12 @@
       incremental_strategy='merge',
       unique_key='SHIPMENT_NUMBER',
  
-
 )}}
 
 with incr_data as
 (
 merge into target_table t
-using(select * from {{ref('stg_customerdata')}}) s
+using(select * from CUSTOMER_DATA) s
 on t.SHIPMENT_NUMBER=s.SHIPMENT_NUMBER
 when matched then update 
 set t.ORGANIZATION_NAME=s.ORGANIZATION_NAME,
