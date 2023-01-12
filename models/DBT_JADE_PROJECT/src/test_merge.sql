@@ -1,6 +1,6 @@
 
 {{config(
-      materialized='view',
+      materialized='table',
       incremental_strategy='merge',
       unique_key='SHIPMENT_NUMBER',
  
