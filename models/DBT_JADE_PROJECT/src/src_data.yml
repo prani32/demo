@@ -9,3 +9,4 @@ sources:
       - name: ADJ_ADV_947
       - name: SHIPPING_NOTICE_856
       - name: RECEIPT_ADVICE_944
+      - name: customer_data 
