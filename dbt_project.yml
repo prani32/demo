@@ -38,6 +38,7 @@ models:
       materialized: view
       materialized: Table
       +incremental_strategy: append
+      +incremental_strategy: merge
       
 
       
