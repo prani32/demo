@@ -40,6 +40,7 @@ models:
       +incremental_strategy: "append"
       +incremental_strategy: "delete+insert"
       +incremental_strategy: "merge"
+      +incremental_strategy: "insert_overwrite"
 
       
       

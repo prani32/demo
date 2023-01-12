@@ -4,7 +4,7 @@
     incremental_strategy='merge'
 )}}
 
-merge into target_table as t
+merge into DBT_DB.DBT_SCHEMA.TARGET_TABLE t
 using(select * from {{ref('stg_RECEIPT_ADVICE_944')}}) as s
 on t.SHIPMENT_NUMBER=s.SHIPMENT_NUMBER
 when matched then update 
