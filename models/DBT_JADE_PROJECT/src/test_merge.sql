@@ -1,3 +1,9 @@
+{{ config(
+    materialized='incremental',
+    unique_key='SHIPMENT_NUMBER',
+    incremental_strategy='merge'
+)}}
+
 merge into target_table t
 using(select * from RECEIPT_ADVICE_944) s
 on t.SHIPMENT_NUMBER=s.SHIPMENT_NUMBER
