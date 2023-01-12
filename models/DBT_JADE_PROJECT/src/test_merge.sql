@@ -17,7 +17,7 @@ using_clause AS
     SUB_INVENTORY,
     TRANSFER_SUB_INVENTORY,
     max(TRANSACTION_DATE) as TRANSACTION_DATE
-    from {{ref('test_merge')}}
+    from {{ref('stg_customerdata')}}
 
     {% if is_incremental() %}
 -- this filter will only be applied on an incremental run
