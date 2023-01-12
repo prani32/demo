@@ -1,7 +1,5 @@
 {{ config(
     materialized='incremental',
-    unique_key='SHIPMENT_NUMBER',
-    incremental_strategy='merge'
 )}}
 
 merge into target_table t
