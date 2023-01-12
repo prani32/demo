@@ -1,4 +1,3 @@
-
 {{config(
       materialized='table',
       incremental_strategy='merge',
