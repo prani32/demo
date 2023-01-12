@@ -1,6 +1,6 @@
 {{ config(
     materialized='incremental',
-    unique_key='SHIPMENT_NUMBER'
+    unique_key='SHIPMENT_NUMBER',
     incremental_strategy='append'
 )}}
 select * from {{ref('stg_customerdata')}}
