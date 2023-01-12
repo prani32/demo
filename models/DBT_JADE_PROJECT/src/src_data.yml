@@ -8,3 +8,4 @@ sources:
       - name: PO_ACK_855
       - name: ADJ_ADV_947
       - name: SHIPPING_NOTICE_856
+      - name: RECEIPT_ADVICE_944
