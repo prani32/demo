@@ -5,7 +5,7 @@
 )}}
 
 merge into DBT_DB.DBT_SCHEMA.TARGET_TABLE t
-using(select * from {{ref('stg_RECEIPT_ADVICE_944')}}) as s
+using(select * from {{ref('stg_RECEIPT_ADVICE_944')}}) s
 on t.SHIPMENT_NUMBER=s.SHIPMENT_NUMBER
 when matched then update 
 set t.ORGANIZATION_NAME=s.ORGANIZATION_NAME,
