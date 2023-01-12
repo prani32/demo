@@ -1,5 +1,5 @@
-merge into target_table as t
-using(select * from RECEIPT_ADVICE_944) as s
+merge into target_table AS t
+using(select * from RECEIPT_ADVICE_944) AS s
 on t.SHIPMENT_NUMBER=s.SHIPMENT_NUMBER
 when matched then update 
 set t.ORGANIZATION_NAME=s.ORGANIZATION_NAME,
