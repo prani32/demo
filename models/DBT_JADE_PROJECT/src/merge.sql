@@ -27,4 +27,3 @@ set t.ORGANIZATION_NAME=s.ORGANIZATION_NAME,
                               s.ITEM,s.SUB_INVENTORY,
                               s.TRANSFER_SUB_INVENTORY,
                               s.TRANSACTION_DATE);
-    
