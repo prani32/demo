@@ -39,6 +39,7 @@ models:
       materialized: Table
       +incremental_strategy: "append"
       +incremental_strategy: "delete+insert"
+      +incremental_strategy: "merge"
 
       
       
