@@ -4,8 +4,8 @@
     incremental_strategy='merge'
 )}}
 
-merge into target_table t
-using(select * from {{ref('stg_RECEIPT_ADVICE_944')}}) s
+merge into target_table as t
+using(select * from {{ref('stg_RECEIPT_ADVICE_944')}}) as s
 on t.SHIPMENT_NUMBER=s.SHIPMENT_NUMBER
 when matched then update 
 set t.ORGANIZATION_NAME=s.ORGANIZATION_NAME,
