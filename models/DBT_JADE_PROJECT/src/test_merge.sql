@@ -3,7 +3,6 @@
     unique_key='SHIPMENT_NUMBER',
     incremental_strategy='merge'
 )}}
-
 merge into target_table t
 using(select * from {{ref('stg_customerdata')}}) s
 on t.SHIPMENT_NUMBER=s.SHIPMENT_NUMBER
