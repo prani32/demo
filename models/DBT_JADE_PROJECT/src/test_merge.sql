@@ -7,8 +7,8 @@
 
 with incr_data as
 (
-merge into target_table t
-using(select * from CUSTOMER_DATA) s
+merge into target_table as t
+using(select * from CUSTOMER_DATA) as s
 on t.SHIPMENT_NUMBER=s.SHIPMENT_NUMBER
 when matched then update 
 set t.ORGANIZATION_NAME=s.ORGANIZATION_NAME,
