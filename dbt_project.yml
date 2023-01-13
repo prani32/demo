@@ -15,6 +15,8 @@ model-paths: ["models"]
 analysis-paths: ["analyses"]
 test-paths: ["tests"]
 seed-paths: ["seeds"]
+seeds:
+  +schema: seed_data
 macro-paths: ["macros"]
 snapshot-paths: ["snapshots"]
 
@@ -40,6 +42,7 @@ models:
       +incremental_strategy: append
       +incremental_strategy: merge
       +incremental_strategy: delete+insert
+
       
 
       
