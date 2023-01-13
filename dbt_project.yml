@@ -15,18 +15,6 @@ model-paths: ["models"]
 analysis-paths: ["analyses"]
 test-paths: ["tests"]
 seed-paths: ["seeds"]
-seeds:
-  sample_data:
-    +enabled: true
-    +schema: seed_data
-    # This configures seeds/country_codes.csv
-    country_codes:
-      # Override column types
-      +column_types:
-        country_code: varchar(2)
-        country_name: varchar(32)
-    marketing:
-      +schema: marketing # this will take precedence
 macro-paths: ["macros"]
 snapshot-paths: ["snapshots"]
 
