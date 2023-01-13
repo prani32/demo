@@ -2,14 +2,15 @@ version : 2
 
 seeds :
 
-  - name : country_data
+  - name : emp_data
 
     description : manual map of employees to cutomer
 
     columns :
 
-      - name : country_code
-      - name : country_name
+      - name : employee_id
+      - name : email
+      - name : customer_id
 
         tests:
 
