@@ -10,7 +10,3 @@ sources:
       - name: SHIPPING_NOTICE_856
       - name: RECEIPT_ADVICE_944
       - name: customer_data 
-  - name: shipping_data
-    database: dbt_db
-    schema: dbt_sf_schema
-      - name: EMP
