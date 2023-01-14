@@ -40,8 +40,4 @@ models:
       +incremental_strategy: append
       +incremental_strategy: merge
       +incremental_strategy: delete+insert
-
-      
-
-      
       
