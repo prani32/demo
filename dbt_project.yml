@@ -37,8 +37,9 @@ models:
     src:
       +materialized: view
       +post-hook:
-        - "GRANT SELECT ON {{this}} TO ROLE REPORTER"
+        - "GRANT SELECT ON {{ this }} TO ROLE DBT_INTGR"
       materialized: Table
+      
       +incremental_strategy: append
       +incremental_strategy: merge
       +incremental_strategy: delete+insert
