@@ -1,8 +1,8 @@
-{% snapshot orders_snapshot_check %}
+{% snapshot snapshot_orders %}
     {{
         config(
           target_database = 'dbt_db' ,
-          target_schema='dbt_schema',
+          target_schema='snapshot',
           strategy='check',
           unique_key='id',
           check_cols = 'all'
