@@ -35,7 +35,7 @@ models:
     # Applies to all files under models/example/
     example: 
     src:
-      materialized: view
+      +materialized: view
       +post-hook:
         - "GRANT SELECT ON {{this}} TO ROLE REPORTER"
       materialized: Table
