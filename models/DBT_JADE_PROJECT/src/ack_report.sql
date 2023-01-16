@@ -1,3 +1,6 @@
+{{ config (
+    materialized="table"
+)}}
 WITH ack_reviews AS (
  SELECT * FROM {{ ref('stg_ack') }}
 )
