@@ -38,12 +38,10 @@ models:
       materialized: view
       +post-hook:
         - "GRANT SELECT ON {{ this }} TO ROLE REPORTER"
-      materialized: Table
-       +post-hook:
-        - "GRANT SELECT ON {{ this }} TO ROLE REPORTER"
-        
-      
+      materialized: Table      
       +incremental_strategy: append
       +incremental_strategy: merge
       +incremental_strategy: delete+insert
+      +post-hook:
+        - "GRANT SELECT ON {{ this }} TO ROLE REPORTER"
       
