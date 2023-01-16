@@ -43,5 +43,5 @@ models:
       +incremental_strategy: merge
       +incremental_strategy: delete+insert
       +post-hook:
-        - "GRANT SELECT ON {{ this }} TO ROLE REPORTER"
+        - "GRANT SELECT ON {{ this }} TO ROLE DBT_INTGR"
       
