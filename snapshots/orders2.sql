@@ -3,7 +3,7 @@
 {{
     config(
       target_database='dbt_db',
-      target_schema='snapshots',
+      target_schema='snapshot',
       unique_key='id',
 
       strategy='timestamp',
