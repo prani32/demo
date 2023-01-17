@@ -6,7 +6,7 @@
       target_schema='snapshot',
       unique_key='id',
       strategy='timestamp',
-      updated_at='order_date'
+      updated_at='updated_at'
     )
 }}
 
