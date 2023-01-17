@@ -7,10 +7,10 @@
       unique_key='id',
 
       strategy='timestamp',
-      updated_at='updated_at',
+      updated_at='order_date',
     )
 }}
 
-select * from {{ source('shipping_data', 'dim_orders') }}
+select * from {{ source('shipping_data', 'orders') }}
 
 {% endsnapshot %}
