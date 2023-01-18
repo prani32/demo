@@ -6,7 +6,7 @@
           strategy='check',
           unique_key='id',
           check_cols = 'all',
-          invalidate_hard_deletes=True
+          invalidate_hard_deletes=False
         )
     }}
     select * from {{ source('shipping_data', 'orders') }}
