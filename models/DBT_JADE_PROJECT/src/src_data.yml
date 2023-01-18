@@ -12,5 +12,8 @@ sources:
       - name: customer_data
       - name: SRC_ORDERS
       - name: src_cust_orders
+      - name: RAW_CUSTOMERS
+      - name: RAW_ORDERS
+      - name: RAW_PAYMENTS
 
       
