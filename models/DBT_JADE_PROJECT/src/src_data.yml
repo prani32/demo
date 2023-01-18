@@ -10,7 +10,7 @@ sources:
       - name: SHIPPING_NOTICE_856
       - name: RECEIPT_ADVICE_944
       - name: customer_data
-      - name: orders 
-      - name: dim_orders
+      - name: SRC_ORDERS
+      - name: src_cust_orders
 
       
