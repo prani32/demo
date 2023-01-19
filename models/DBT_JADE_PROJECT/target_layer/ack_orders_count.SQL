@@ -1,5 +1,5 @@
 {{ config (
-    materialized="table"
+    tag="p1"
 )}}
 select
     SOLD_TO_LE_NAME,
