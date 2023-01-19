@@ -32,12 +32,13 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 models:
 
-  DBT_JADE_PROJECT:
-    target_layer:
-      +tag:p1
+  
+   Analytics:
+    DBT_JADE_PROJECT:
+      target_layer:
+        +tag:p1
       
 
-   Analytics:
     # Applies to all files under models/example/
     example: 
     
