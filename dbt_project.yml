@@ -34,15 +34,13 @@ models:
 
   
    Analytics:
-    DBT_JADE_PROJECT:
-      target_layer:
-        +tag:p1
-      
-
     # Applies to all files under models/example/
     example: 
     
     src:
+      stagging:
+        +tag:p1
+
       materialized: view
       materialized: Table      
       +incremental_strategy: append
@@ -50,5 +48,5 @@ models:
       +incremental_strategy: delete+insert
       +post-hook:
         - "GRANT SELECT ON {{ this }} TO ROLE REPORTER"
-      
+        
   
