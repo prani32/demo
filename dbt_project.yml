@@ -34,6 +34,10 @@ models:
    Analytics:
     # Applies to all files under models/example/
     example: 
+      DBT_JADE_PROJECT:
+        target_layer:
+          +tags: p1
+      
     src:
       materialized: view
       materialized: Table      
@@ -43,4 +47,4 @@ models:
       +post-hook:
         - "GRANT SELECT ON {{ this }} TO ROLE REPORTER"
       
-      
+  
