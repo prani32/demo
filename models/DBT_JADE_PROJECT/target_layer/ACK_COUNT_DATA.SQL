@@ -5,7 +5,7 @@
 select
     SOLD_TO_LE_NAME,
     count(*) Total_Order_Count,
-    {{rename_segments('ACKNOWLEDGEMENT_NOTE')}} mkt_segment_adjusted
+    {{ACK_COUNT('ACKNOWLEDGEMENT_NOTE')}} ACK_ORDERS_COUNT
 from  {{ source('shipping_data', 'PO_ACK_855') }}
 group by SOLD_TO_LE_NAME
 order by SOLD_TO_LE_NAME
