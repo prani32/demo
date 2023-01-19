@@ -44,6 +44,5 @@ models:
       +incremental_strategy: delete+insert
       +post-hook:
         - "GRANT SELECT ON {{ this }} TO ROLE REPORTER"
-      stagging:
-        +tag:p1  
+      
   
