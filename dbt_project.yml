@@ -55,10 +55,10 @@ models:
           +tags :
                - t1
 snapshots:
-  +tags  :
-        - sp1
-        - sp2
-        - sp2
+          +tags  :
+             - sp1
+             - sp2
+             - sp2
     
 
             
