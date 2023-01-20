@@ -1,6 +1,7 @@
 {{ config (
-    tags=["p1"]
+    materialized="table"
 )}}
+
 select
     SOLD_TO_LE_NAME,
     {{ACK_COUNT('ACKNOWLEDGEMENT_NOTE')}} ack_orders_count,
