@@ -1,6 +1,7 @@
 {% snapshot snapshot_orders %}
     {{
         config(
+          tags=["sp1"],
           target_database = 'dbt_db' ,
           target_schema='snapshot',
           strategy='check',
