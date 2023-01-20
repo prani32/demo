@@ -2,6 +2,7 @@
 
 {{
     config(
+      tags=["sp3"],
       target_database='dbt_db',
       target_schema='snapshot',
       unique_key='id',
