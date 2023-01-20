@@ -1,5 +1,5 @@
 {{ config (
-    tags=["p1"]
+    tags=["t1"]
 )}}
 
 select
