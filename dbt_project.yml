@@ -54,7 +54,13 @@ models:
         target_layer :
           +tags :
                - t1
-               
+snapshots:
+  +tags  :
+        - sp1
+        - sp2
+        - sp2
+    
+
             
         
         
