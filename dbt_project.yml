@@ -38,7 +38,7 @@ models:
     src:
       DBT_JADE_PROJECT:
         Dashboard:
-          +tags:p1
+          +tag:p1
 
       materialized: view
       materialized: Table      
