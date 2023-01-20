@@ -1,3 +1,7 @@
+{{ config (
+    tags=["s3"]
+)}}
+
 with source_data AS
 (
 select * from {{ source('shipping_data', 'RAW_CUSTOMERS') }}

@@ -1,5 +1,5 @@
 {{ config (
-    materialized="table"
+    tags=["p1"]
 )}}
 
 select
