@@ -1,5 +1,5 @@
 {{ config (
-    tag=["p1"]
+    tag-["p1"]
 )}}
 select
     SOLD_TO_LE_NAME,
