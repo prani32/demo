@@ -45,7 +45,12 @@ models:
         - "GRANT SELECT ON {{ this }} TO ROLE REPORTER"
       DBT_JADE_PROJECT:
         Dashboard:
-          +tag: p1
+          +tag: 1
+        stagging:
+          +tags :
+              -  s1
+              -  s2
+              -  s3
         
       
       
