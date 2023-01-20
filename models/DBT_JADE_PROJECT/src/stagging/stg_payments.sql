@@ -1,5 +1,5 @@
 {{ config (
-    tags=["s2"]
+     materialized="table"
 )}}
 
 with source_data AS
