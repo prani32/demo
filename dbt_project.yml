@@ -48,7 +48,6 @@ models:
           +tag: 1
         stagging:
           +tags :
-              
               -  s2
               -  s3
         
