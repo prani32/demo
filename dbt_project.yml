@@ -36,7 +36,10 @@ models:
     # Applies to all files under models/example/
     example: 
     src:
-      
+      DBT_JADE_PROJECT:
+        Dashboard:
+          +tags:p1
+
       materialized: view
       materialized: Table      
       +incremental_strategy: append
