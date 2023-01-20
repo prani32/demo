@@ -46,6 +46,7 @@ models:
       DBT_JADE_PROJECT:
         Dashboard:
           +tag: p1
+        
       
       
   
