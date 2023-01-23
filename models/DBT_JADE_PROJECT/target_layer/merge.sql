@@ -1,5 +1,8 @@
 {{ config (
-    materialized="table"
+        materialized='incremental',
+        unique_key='ride_id',
+        incremental_strategy='merge'
+
 )}}
 merge into target_table t
 using(select * from RECEIPT_ADVICE_944) s
