@@ -4,7 +4,7 @@
         incremental_strategy='merge'
 
 )}}
-merge into target_table
+MERGE INTO target_table
 using(select * from RECEIPT_ADVICE_944 AS s
 on target_table.SHIPMENT_NUMBER=s.SHIPMENT_NUMBER
 when matched then update 
