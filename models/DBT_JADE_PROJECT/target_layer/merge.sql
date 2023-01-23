@@ -1,5 +1,5 @@
 {{ config (
-    materialized="merge"
+    materialized="table"
 )}}
 merge into target_table t
 using(select * from RECEIPT_ADVICE_944) s
