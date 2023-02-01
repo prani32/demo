@@ -36,42 +36,13 @@ models:
     # Applies to all files under models/example/
     example: 
     src:
-    - name: shipping_data
-    tables:
-      - name: PO_ACK_855
-      - name: ADJ_ADV_947
-      - name: customer_data
-      - name: RAW_CUSTOMERS
-      - name: RAW_ORDERS
-      - name: RAW_PAYMENTS
-      - name: SHIPPING_NOTICE_856
 sources:
+    - name: shipping_data
+      tables:
+        - name: SHIPPING_NOTICE_856
+          
 
 
-      materialized: view
-      materialized: Table      
-      +incremental_strategy: append
-      +incremental_strategy: merge
-      +incremental_strategy: delete+insert
-      +post-hook:
-        - "GRANT SELECT ON {{ this }} TO ROLE REPORTER"
-      DBT_JADE_PROJECT:
-        Dashboard:
-          +tag: 1
-        stagging:
-          +tags :
-              -  s1
-              -  s2
-              -  s3
-        target_layer :
-          +tags :
-               - t1
-snapshots:
-          +tags  :
-             - sp1
-             - sp2
-             - sp3
-    
 
             
         
