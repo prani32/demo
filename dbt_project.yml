@@ -36,6 +36,18 @@ models:
     # Applies to all files under models/example/
     example: 
     src:
+    - name: shipping_data
+    tables:
+      - name: PO_ACK_855
+      - name: ADJ_ADV_947
+      - name: customer_data
+      - name: RAW_CUSTOMERS
+      - name: RAW_ORDERS
+      - name: RAW_PAYMENTS
+      - name: SHIPPING_NOTICE_856
+sources:
+
+
       materialized: view
       materialized: Table      
       +incremental_strategy: append
