@@ -2,4 +2,4 @@
     materialized="table"
 )}}
 
-select * from DBT_DB.DBT_SCHEMA.SHIPPING_NOTICE_856
+select * from DBT_DB.EDI_DEV.SHIPPING_NOTICE_856
