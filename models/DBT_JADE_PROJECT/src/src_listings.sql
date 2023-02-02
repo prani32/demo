@@ -1,6 +1,3 @@
-{{ config (
-    materialized="table"
-)}}
 
 with raw_listings as(
     select * from "DBT_DB"."EDI_DEV"."RAW_LISTINGS"
