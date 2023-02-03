@@ -39,6 +39,7 @@ models:
         src:
           dim:
             +materialized: table
+            +materialized : incremental
     
 
         
