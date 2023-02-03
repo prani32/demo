@@ -1,8 +1,3 @@
-{{
- config(
- materialized = 'view'
- )
-}}
 WITH src_hosts AS (
  SELECT
  *
@@ -15,7 +10,7 @@ SELECT
  host_name,
  'Anonymous'
  ) AS host_name,
- IS_SUPERHOST,
+ is_superhost,
  created_at,
  updated_at
 FROM
