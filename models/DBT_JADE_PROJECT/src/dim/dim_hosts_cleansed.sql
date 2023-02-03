@@ -10,8 +10,8 @@ SELECT
  host_name,
  'Anonymous'
  ) AS host_name,
- is_superhost,
  created_at,
+  is_superhost,
  updated_at
 FROM
  src_hosts
