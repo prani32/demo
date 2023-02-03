@@ -35,6 +35,7 @@ models:
    Analytics:
     # Applies to all files under models/example/
     example: 
+    src:
        +materialized: view
        dim:
          +materialized: table
