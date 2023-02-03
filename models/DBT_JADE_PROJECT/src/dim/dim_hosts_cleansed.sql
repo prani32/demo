@@ -6,9 +6,9 @@ WITH src_hosts AS (
 )
 SELECT
  host_id,
+ host_name,
  created_at,
  is_superhost,
- updated_at,
- host_name
+ updated_at
 FROM
  src_hosts
