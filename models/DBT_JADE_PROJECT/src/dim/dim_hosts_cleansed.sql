@@ -7,7 +7,7 @@ WITH src_hosts AS (
 SELECT
  host_id,
  created_at,
-  is_superhost,
+ is_superhost,
  updated_at,
  host_name
 FROM
