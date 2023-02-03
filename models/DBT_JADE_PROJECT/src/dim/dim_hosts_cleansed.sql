@@ -15,7 +15,7 @@ SELECT
  host_name,
  'Anonymous'
  ) AS host_name,
- is_superhost,
+ IS_SUPERHOST,
  created_at,
  updated_at
 FROM
