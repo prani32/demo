@@ -1,5 +1,5 @@
 with raw_hosts as(
-    select * from {{source('shipping_data','RAW_HOSTS')}}
+    select * from {{source('SHIPPING_DATA','RAW_HOSTS')}}
 )
 select 
 id as host_id,

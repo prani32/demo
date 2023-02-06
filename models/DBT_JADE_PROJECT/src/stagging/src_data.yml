@@ -1,8 +1,8 @@
 version: 2
 
 sources:
-  - name: shipping_data
-    database: dbt_db
+  - name: SHIPPING_DATA
+    database: DBT_DB
     schema: EDI_DEV
     tables:
       - name: PO_ACK_855

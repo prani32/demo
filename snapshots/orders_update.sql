@@ -11,6 +11,6 @@
     )
 }}
 
-select * from {{ source('shipping_data', 'src_cust_orders') }}
+select * from {{ source('SHIPPING_DATA', 'src_cust_orders') }}
 
 {% endsnapshot %}

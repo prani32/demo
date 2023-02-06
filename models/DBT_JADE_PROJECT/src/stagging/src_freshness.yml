@@ -1,9 +1,9 @@
 version: 2
 
 sources:
-  - name:  shipping_data
-    database: dbt_db
-    schema: dbt_schema
+  - name:  SHIPPING_DATA
+    database: DBT_DB
+    schema: EDI_DEV
     tables:
       - name: stg_adv
       - name: stg_ack

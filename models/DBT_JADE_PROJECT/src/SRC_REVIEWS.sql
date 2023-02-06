@@ -1,5 +1,5 @@
 with RAW_REVIEWS as (
-    select * from {{source('shipping_data','RAW_REVIEWS')}}
+    select * from {{source('SHIPPING_DATA','RAW_REVIEWS')}}
 )
 select 
   listing_id,

@@ -6,7 +6,7 @@ WITH src_hosts AS (
  SELECT
  *
  FROM
- {{ ref('src_hosts') }}
+ {{ ref('SRC_HOSTS') }}
 )
 SELECT
  host_id,
