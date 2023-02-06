@@ -16,6 +16,9 @@ sources:
       - name: RAW_ORDERS
       - name: RAW_PAYMENTS
       - name: customers
+      - name: RAW_LISTINGS 
+      - name: RAW_HOSTS
+      - name: RAW_REVIEWS
      
 
       
