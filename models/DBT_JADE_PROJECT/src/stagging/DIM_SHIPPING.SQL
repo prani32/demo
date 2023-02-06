@@ -4,12 +4,12 @@
 
 with ACK_DATA as (
 
-    select * from {{ ref('stg_ack')}}
+    select * from {{ ref('STG_ACK')}}
 
 ),
 ADV_DATA as (
 
-    select * from {{ ref('stg_adv') }}
+    select * from {{ ref('STG_ADV') }}
 ),
 SHIIPING_DETAILS as (
 select

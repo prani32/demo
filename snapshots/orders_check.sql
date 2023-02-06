@@ -10,5 +10,5 @@
           invalidate_hard_deletes=False
         )
     }}
-    select * from {{ source('shipping_data', 'SRC_ORDERS') }}
+    select * from {{ source('SHIPPING_DATA', 'SRC_ORDERS') }}
 {% endsnapshot %}

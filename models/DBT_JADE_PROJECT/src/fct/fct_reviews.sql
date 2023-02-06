@@ -5,7 +5,7 @@
  )
 }}
 WITH src_reviews AS (
- SELECT * FROM {{ ref('src_reviews') }}
+ SELECT * FROM {{ ref('SRC_REVIEWS') }}
 )
 SELECT * FROM src_reviews
 WHERE review_text is not null

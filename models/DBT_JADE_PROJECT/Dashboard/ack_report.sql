@@ -3,7 +3,7 @@
 )}}
 
 WITH ack_reviews AS (
- SELECT * FROM {{ ref('stg_ack') }}
+ SELECT * FROM {{ ref('STG_ACK') }}
 )
 select
     SOLD_TO_LE_NAME,
