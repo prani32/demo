@@ -1,5 +1,5 @@
 with RAW_REVIEWS as (
-    select * from DBT_DB.EDI_DEV.RAW_REVIEWS
+    select * from {{source('shipping_data','RAW_REVIEWS')}}
 )
 select 
   listing_id,
