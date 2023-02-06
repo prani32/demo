@@ -12,6 +12,15 @@ seeds :
       - name : email
       - name : customer_id
 
+  - name : full_moon_data
+    
+    description : manual map of  full_moon_date
+
+
+    columns :
+
+      - name : full_moon_date
+
         tests:
 
           - unique
