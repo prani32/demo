@@ -1,6 +1,6 @@
 
 with raw_listings as(
-    select * from "DBT_DB"."EDI_DEV"."RAW_LISTINGS"
+    select * from {{source('shipping_data','RAW_LISTINGS')}}
 )
 select 
 id as listing_id,
