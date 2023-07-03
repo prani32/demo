@@ -1,0 +1,18 @@
+version: 2
+models:
+  - name: dim_listings_cleansed
+    description: 'Sample database provided by snowflake'
+    columns:
+       - name: listing_id
+         tests:
+           - unique
+           - not_null
+  
+       - name: host_id
+         description: 'detailes information about data'
+         tests:
+           - not_null
+           
+             
+
+    

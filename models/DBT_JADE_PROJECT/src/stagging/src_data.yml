@@ -1,0 +1,30 @@
+version: 2
+
+sources:
+  - name: SHIPPING_DATA
+    database: DBT_DB
+    schema: EDI_DEV
+    tables:
+      - name: PO_ACK_855
+      - name: ADJ_ADV_947
+      - name: SHIPPING_NOTICE_856
+      - name: RECEIPT_ADVICE_944
+      - name: customer_data
+      - name: SRC_ORDERS
+      - name: src_cust_orders
+      - name: RAW_CUSTOMERS
+      - name: RAW_ORDERS
+      - name: RAW_PAYMENTS
+      - name: customers
+      - name: RAW_LISTINGS 
+      - name: RAW_HOSTS
+      - name: RAW_REVIEWS
+       
+        loaded_at_field: date
+        freshness:
+        "warn_after": {count:1,period:hour}
+        "error_after": {count:24,period:hour}
+      
+     
+
+      

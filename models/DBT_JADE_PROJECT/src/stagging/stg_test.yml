@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: STG_ACK
+    description: Staged shipping data.
+    columns: 
+      - name: SUPPLIER_ORDER_NUMBER
+        tests:
+          - unique
+          - not_null
+
+  - name: STG_ADV
+    description: Staged transaction data.
+    columns:
+      - name: SHIPMENT_NUMBER
+        tests:
+          - unique
+          - not_null
+      - name: status
+        description: "{{ doc('order_status') }}"
+        tests:
+       
